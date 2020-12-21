@@ -1,0 +1,472 @@
+.name-title {
+    font-family: cursive;
+    margin-top: 1%;
+    font-weight: 900;
+    font-size: xx-large;
+    color: yellowgreen;
+}
+
+.college-branch {
+    font-family: cursive;
+    font-weight: 900;
+    font-size: x-large;
+    color: #cc4f5b;
+}
+
+.info-block {
+    font-family: cursive;
+    font-weight: 900;
+    font-size: larger;
+    color: #c32e3d;
+
+}
+
+.info-block-profile {
+    font-family: cursive;
+    font-weight: 900;
+    font-size: larger;
+    color: #dcaf2a;
+}
+
+.info-block-list {
+    font-family: cursive;
+    font-weight: 900;
+    font-size: larger;
+    color: #c32e3d;
+    list-style-position: inside;
+
+}
+
+.dropbtn {
+    background-color: #fbfdff;
+    color: #19cc41;
+    padding: 10px;
+    border: pink;
+    cursor: pointer;
+    font-weight: 1000;
+    font-family: system-ui;
+    font-size: smaller;
+    border-radius: 1in;
+}
+
+.enrolment-container {
+    text-align: left;
+    padding-left: 12%;
+    padding-top: 1%;
+    font-size: large;
+    font-family: cursive;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.enrolment-container-profile {
+    text-align: left;
+    padding-left: 12%;
+    padding-top: 1%;
+    font-size: large;
+    font-family: cursive;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.batch-semester-text {
+    text-align: left;
+    padding-left: 12%;
+    padding-top: 8%;
+    font-size: xx-large;
+    font-family: cursive;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.batch-semester-text-profile{
+    text-align: left;
+    padding-left: 12%;
+    padding-top: 8%;
+    font-size: xx-large;
+    font-family: cursive;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.img-pointer {
+    position: absolute;
+    left: -4%;
+    margin-top: 0%;
+    top: 40px;
+    height: 350px;
+    width: auto;
+}
+
+.img-man {
+    position: absolute;
+    right: 0;
+    height: 75%;
+}
+
+.img-profgen {
+    position: absolute;
+    border-radius: 0.5in;
+    margin-left: 37%;
+    margin-top: 0.5%;
+
+}
+
+.img-analytics {
+    position: absolute;
+    border-radius: 0.5in;
+    margin-top: 0.72%;
+    margin-left: 51%;
+    height: 20%;
+}
+
+.features-name {
+    margin-left: 37.5%;
+    margin-top: 10.5%;
+}
+
+a:hover {
+    color: #80494e;
+    text-decoration: underline;
+}
+
+.custom-a {
+    color: #ffcfcf;
+    font-size: x-large;
+    font-weight: 700;
+    font-family: cursive;
+
+}
+
+.bg {
+    background-image: url(/static/img/bkg.png);
+    height: 84%;
+    margin-top: -1%; 
+    margin-right: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-white {
+    background-image: url(/static/img/white.png);
+    height: 84%;
+    margin-top: -1%; 
+    margin-right: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marks {
+    align-content: center;
+}
+
+ 
+@import "compass/css3";
+
+table {
+font-family: 'Arial';
+margin: 25px auto;
+border-collapse: collapse;
+border: 1px solid #eee;
+border-bottom: 2px solid #00cccc;
+box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05) }
+
+tr:hover {
+    background: #f4f4f4;
+    }
+        
+td {
+    color: #555;
+}
+    
+th, td {
+    color: #999;
+    border: 1px solid #eee;
+    padding: 12px 35px;
+    border-collapse: collapse;
+}
+th {
+    background: #00cccc;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    margin-top: 0%;
+    padding-top: 0;
+}
+
+.chk-btn {
+    border: none;
+    background-color: #ffffff;
+    color: #19cc41;
+    cursor: pointer;
+    border-radius: 0.5in;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 4%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+background: #459e59;
+color: white;
+width: 4%;
+}
+
+.fa-twitter {
+background: #459e59;
+color: white;
+width: 4%;
+}
+
+.fa-linkedin {
+background: #459e59;
+color: white;
+width: 4%;
+}
+
+.fa-instagram {
+background: #459e59;
+color: white;
+width: 4%;
+}
+
+.fa-github {
+background: #459e59;
+color: white;
+width: 4%;
+}
+
+.fa-medium {
+
+    background: #459e59;
+    color: white;
+    width: 4%;
+}
+
+.coming-soon {    
+    font-size: 10ch; 
+    color: rgb(249, 252, 251); 
+    padding-top: 20%;
+    font-weight: 900;
+    font-family: cursive;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .marks {
+        align-content: center;
+    }
+
+    table {
+        font-family: 'Arial';
+        margin: 17px auto;
+        border-collapse: collapse;
+        border: 1px solid #eee;
+        border-bottom: 2px solid #00cccc;
+        }
+
+    tr:hover {
+        background: #f4f4f4;
+        }
+            
+    td {
+        color: #555;
+        font-size: 10px;
+        }
+        
+    th, td {
+        color: #999;
+        border: 1px solid #eee;
+        padding: 4px 7px;
+        border-collapse: collapse;
+    }
+    th {
+        background: #00cccc;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+
+    body,
+    html {
+        height: 50%;
+        margin: 0;
+    }
+
+    .img-pointer {
+        position: absolute;
+        left: -50px;
+        top: 22%;
+        height: 250px;
+        width: 60%;
+        visibility: hidden;
+    }
+
+    .img-man {
+        position: absolute;
+        right: 0;
+        height: 33%;
+    }
+
+    .img-profgen {
+        position: absolute;
+        border-radius: 1in;
+        margin-left: 3%;
+        margin-top: 0.5%;
+    }
+
+    .img-analytics {
+        position: absolute;
+        border-radius: 0.5in;
+        margin-top: 5.5%;
+        margin-left: 53%;
+    }
+
+    .batch-semester-text {
+        text-align: left;
+        padding-left: 1.5%;
+        padding-top: 6%;
+        font-size: medium;
+        font-family: cursive;
+        font-weight: bolder;
+        color: #2c2f31;
+    }
+
+    .enrolment-container {
+        text-align: left;
+        padding-left: 1.5%;
+        padding-top: 1%;
+        font-size: large;
+        font-family: cursive;
+        font-weight: bolder;
+        color: aliceblue;
+    }
+
+    .chk-btn {
+        margin-top: 0.3cm;
+        border: none;
+        background-color: #d6e3f1;
+        color: #19cc41;
+        border-radius: 0.5in;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    .dropbtn {
+        margin-bottom: 0.3cm;
+        background-color: #d6e3f1;
+        color: #19cc41;
+        padding: 10px;
+        font-weight: 1000;
+        font-family: system-ui;
+        font-size: smaller;
+        border-radius: 1in;
+    }
+
+    .features-name {
+        margin-left: 7%;
+        margin-top: 42%;
+    }
+
+    a:hover {
+        color: #80494e;
+        text-decoration: underline;
+    }
+
+    .custom-a {
+        color: #da7c7c;
+        font-size: large;
+        font-weight: 700;
+        font-family: cursive;
+
+    }
+
+    .name-title {
+        font-family: cursive;
+        margin-top: 1%;
+        font-weight: 900;
+        font-size: x-large;
+    }
+    
+    .college-branch {
+        font-family: cursive;
+        font-weight: 900;
+        font-size: revert;
+        color: #cc4f5b;
+    }
+    
+    .info-block {
+        font-family: cursive;
+        font-weight: 900;
+        font-size: unset;
+        color: #c32e3d;
+    
+    }
+
+    .info-block-profile {
+        font-family: cursive;
+        font-weight: 900;
+        font-size: unset;
+        color: #dcaf2a;
+    
+    }
+
+    .promos {
+        visibility: hidden;
+    }
+
+    .coming-soon {
+        font-size: x-large;
+    }
+
+    .batch-semester-text-profile{
+        text-align: left;
+        padding-left: 3%;
+        padding-top: 40%;
+        font-size: x-large;
+        font-family: cursive;
+        font-weight: bolder;
+        color: #39bf58;
+    }
+    
+    .enrolment-container-profile {
+        text-align: left;
+        padding-left: 3.5%;
+        padding-top: 2%;
+        font-size: large;
+        font-family: cursive;
+        font-weight: bolder;
+        color: aliceblue;
+    }
+
+    .info-block-list {
+        font-family: cursive;
+        font-weight: 900;
+        font-size: larger;
+        color: #c32e3d;
+        list-style-position: inside;
+        margin-left: -11%;
+    }
+}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} {{name}}'s Marksheet {% endblock title %}
+{% block body %}
+<center>
+    <div class="name-title">{{name}}'s {{semester}} Semester Scoresheet</div>
+    <div class="college-branch">{{college}}, {{branch}}</div>
+</center>
+<div class="marks">
+    {{ marksTable|safe }}
+</div>
+<div style="padding-bottom: 2.5%;"></div>
+<center>
+    <div class="info-block">You scored {{percentage}}% with Semester Grade Point (SGPA) of {{sgpa}}</div>
+    <div class="info-block">Marks Secured: {{total_marks[0]}}/{{total_marks[1]}}</div>
+    <div class="info-block">College Overall Rank: {{college_overall_rank[0]}}/{{college_overall_rank[1]}}</div>
+    <div class="info-block">College Branch Rank: {{college_branch_rank[0]}}/{{college_branch_rank[1]}}</div>
+    <div class="info-block">University Overall Rank: {{university_overall_rank[0]}}/{{university_overall_rank[1]}}</div>
+    <div class="info-block">University Branch Rank: {{university_branch_rank[0]}}/{{university_branch_rank[1]}}</div>
+</center>
+<div style="padding-bottom: 5%;"></div>
+{% endblock body %}

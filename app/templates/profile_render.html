@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %} {{name}}'s Profile {% endblock title %}
+{% block body %}
+<center>
+    <div class="name-title">{{name}}'s Current Record</div>
+    <div class="college-branch">{{college}}, {{branch}}</div>
+    <div class="info-block">Your Current CGPA is {{cgpa}}</div>
+<div style="padding-bottom: 3%;"></div>
+{% for data in parsed_data %}
+<div class="info-block-profile">Semester - {{data[0]}}</div>
+<div class="info-block-profile">Scored {{data[3]}}% marks with {{data[2]}} Semester Grade Point(SGPA)</div>
+<div class="marks">
+    {{ data[1]|safe }}
+</div>
+<div style="padding-bottom: 2.5%;"></div>
+{% endfor %}
+</center>
+<div style="padding-bottom: 5%;"></div>
+{% endblock body %}

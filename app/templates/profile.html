@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} Profile {% endblock title %}
+{% block body %}
+<div class="bg">
+    <div class="batch-semester-text-profile">
+        <p>Select your Batch & Current Semester</p>
+        <div>
+            <form class="form-inline" method="POST" action="/profile-gen">
+                <div>
+                    <select name="batch-select" class="dropbtn">
+                        {% for i in batches %}
+                        <option value="{{ i.name }}">{{ i.name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="semester-select" class="dropbtn">
+                        {% for i in semesters %}
+                        <option value="{{ i.name }}">{{ i.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+        </div>
+    </div>
+    <div class="enrolment-container-profile">
+        <input type="text" id="rollNo" name="rollNo" placeholder='Enter your Enrolement Number' required>
+        <button type="submit" class="chk-btn">Generate Profile</button>
+    </div>
+    </form>
+</div>
+{% endblock body %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+{% block body %}
+<div class="bg">
+    <center>
+        <p style="font-size: 5ch; color: rgb(249, 252, 251);"><b>IPU Results Display</b></p>
+    </center>
+    <img class="img-pointer" src="/static/img/pointer.png">
+    <img class="img-man" src="/static/img/man-standing.png">
+    <div class="batch-semester-text">
+        <p>Select your Batch & Semester</p>
+        <div>
+            <form class="form-inline" method="POST" action="/portal">
+                <div>
+                    <select name="batch-select" class="dropbtn">
+                        {% for i in batches %}
+                        <option value="{{ i.name }}">{{ i.name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="semester-select" class="dropbtn">
+                        {% for i in semesters %}
+                        <option value="{{ i.name }}">{{ i.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+        </div>
+    </div>
+    <div class="enrolment-container">
+        <input type="text" id="rollNo" name="rollNo" placeholder='Enter your Enrolement Number' required>
+        <button type="submit" class="chk-btn">Check Marks</button>
+    </div>
+    </form>
+    <a href="/profile"><img class="img-profgen" src="/static/img/profile.png"></a>
+    <a href="/dashapp"><img class="img-analytics" src="/static/img/analytics.png"></a>
+    <div class="features-name">
+        <a class="custom-a" href="/profile">Generate Profile</a>
+        <span style="padding-left: 48px;"></span>
+        <a class="custom-a" href="/dashapp">Analytics</a>
+    </div>
+</div>
+{% endblock body %}
