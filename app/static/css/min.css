@@ -108,14 +108,13 @@
     position: absolute;
     border-radius: 0.5in;
     margin-left: 37%;
-    margin-top: 0.5%;
-
+    margin-top: 2.5%;
 }
 
 .img-analytics {
     position: absolute;
     border-radius: 0.5in;
-    margin-top: 0.72%;
+    margin-top: 2.72%;
     margin-left: 51%;
     height: 20%;
 }
@@ -273,6 +272,10 @@ width: 4%;
     font-family: cursive;
 }
 
+.extra {
+    margin-top: -8%;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
     .marks {
@@ -334,13 +337,13 @@ width: 4%;
         position: absolute;
         border-radius: 1in;
         margin-left: 3%;
-        margin-top: 0.5%;
+        margin-top: 10.5%;
     }
 
     .img-analytics {
         position: absolute;
         border-radius: 0.5in;
-        margin-top: 5.5%;
+        margin-top: 10.5%;
         margin-left: 53%;
     }
 
@@ -387,7 +390,7 @@ width: 4%;
 
     .features-name {
         margin-left: 7%;
-        margin-top: 42%;
+        margin-top: 37%;
     }
 
     a:hover {
@@ -468,5 +471,9 @@ width: 4%;
         color: #c32e3d;
         list-style-position: inside;
         margin-left: -11%;
+    }
+
+    .extra {
+        margin-top: -22%;
     }
 }
