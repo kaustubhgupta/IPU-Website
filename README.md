@@ -1,5 +1,7 @@
 # IPU-Website
 
+![IPU-Website](https://socialify.git.ci/kaustubhgupta/IPU-Website/image?description=1&forks=1&issues=1&language=1&owner=1&pulls=1&stargazers=1&theme=Light)
+
 ![web-preview](./preview/web-preview.gif)
 
 - This is an unofficial result portal developed to ease the process of checking the results.
