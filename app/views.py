@@ -96,6 +96,7 @@ def profile_render():
         parsed_data = []
         cgpa = 0
         count = 0
+        percentage_ = 0
         while(curr_sem!=0):
             for key, value in data['result'].items():
                 searchKey = 'semester_{}'.format(curr_sem)
@@ -105,14 +106,16 @@ def profile_render():
                         df = pd.DataFrame(marks, columns=['Subjects', 'Internals', 'Externals', 'Total', 'Grade Points'])
                         parsed_data.append((curr_sem, df.to_html(index=False), value['sgpa'], value['percentage']))
                         cgpa += value['sgpa']
+                        percentage_ += value['percentage']
                         count += 1
                     else:
                         continue
                     
             curr_sem -= 1
         cgpa_final = round((cgpa/count), 2)
+        percentage_final = round((percentage_/count), 2)
         return render_template('profile_render.html', name=data['result']['name'],
-                            college=data['result']['college_name'], branch=data['result']['branch_name'], parsed_data=parsed_data, cgpa=cgpa_final)
+                            college=data['result']['college_name'], branch=data['result']['branch_name'], parsed_data=parsed_data, cgpa=cgpa_final, percentage_final=percentage_final)
 
     else:   
         abort(404)
