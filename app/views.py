@@ -20,11 +20,6 @@ def contact():
     return render_template('creator.html')
 
 
-@app.route('/dashapp')
-def dash():
-    return render_template('coming_soon.html')
-
-
 @app.route('/')
 def home():
     return render_template('index.html', batches=app.config['batches'], semesters=app.config['semesters'])

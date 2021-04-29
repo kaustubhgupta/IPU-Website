@@ -2,3 +2,7 @@ flask
 pandas
 gunicorn
 requests
+plotly
+dash_html_components
+dash
+dash_core_components
