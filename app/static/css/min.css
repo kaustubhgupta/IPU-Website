@@ -349,7 +349,7 @@ width: 4%;
         padding-left: 1.5%;
         padding-top: 6%;
         font-size: medium;
-        font-family: cursive;
+        font-family: 'Courier New', monospace;
         font-weight: bolder;
         color: #2c2f31;
     }
@@ -359,7 +359,7 @@ width: 4%;
         padding-left: 1.5%;
         padding-top: 1%;
         font-size: large;
-        font-family: cursive;
+        font-family: 'Courier New', monospace;
         font-weight: bolder;
         color: aliceblue;
     }
@@ -399,26 +399,26 @@ width: 4%;
         color: #da7c7c;
         font-size: large;
         font-weight: 700;
-        font-family: cursive;
+        font-family: 'Courier New', monospace;
 
     }
 
     .name-title {
-        font-family: cursive;
+        font-family: 'Courier New', monospace;
         margin-top: 1%;
         font-weight: 900;
         font-size: x-large;
     }
     
     .college-branch {
-        font-family: cursive;
+        font-family: 'Courier New', monospace;
         font-weight: 900;
         font-size: revert;
         color: #cc4f5b;
     }
     
     .info-block {
-        font-family: cursive;
+        font-family: 'Courier New', monospace;
         font-weight: 900;
         font-size: unset;
         color: #c32e3d;
@@ -426,7 +426,7 @@ width: 4%;
     }
 
     .info-block-profile {
-        font-family: cursive;
+        font-family: 'Courier New', monospace;
         font-weight: 900;
         font-size: unset;
         color: #dcaf2a;
@@ -446,7 +446,7 @@ width: 4%;
         padding-left: 3%;
         padding-top: 40%;
         font-size: x-large;
-        font-family: cursive;
+        font-family: 'Courier New', monospace;
         font-weight: bolder;
         color: #39bf58;
     }
@@ -456,13 +456,13 @@ width: 4%;
         padding-left: 3.5%;
         padding-top: 2%;
         font-size: large;
-        font-family: cursive;
+        font-family: 'Courier New', monospace;
         font-weight: bolder;
         color: aliceblue;
     }
 
     .info-block-list {
-        font-family: cursive;
+        font-family: 'Courier New', monospace;
         font-weight: 900;
         font-size: larger;
         color: #c32e3d;
