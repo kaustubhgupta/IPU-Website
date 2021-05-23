@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 import os
+import json
 from flask import current_app as app
 from flask import render_template, request, redirect, abort
 
@@ -114,3 +115,47 @@ def profile_render():
 
     else:   
         abort(404)
+
+@app.route("/Ranks", methods=['GET', 'POST'])
+def ranks():
+    batch = '2018-2022'
+    semester = '1st'
+    branch = 'All Branch'
+    college_uni= 'Whole University'
+    top = 10
+    if request.method == 'POST':
+        batch = request.form.get('batch-select')
+        semester = request.form.get('semester-select')
+        top = request.form.get('top-select')
+        college_uni = request.form.get('college-uni-select')
+        branch = request.form.get('branch-select')
+        url = "https://ipubackendapi.herokuapp.com/fetchRanks?semester={}&batch={}&top={}&college_uni={}&branch={}".format(semester[0], batch[2:4], int(top[4:]), college_uni, branch)
+        headers = {'Authorization': 'Bearer {}'.format(os.environ['API_KEY'])}
+        received = requests.request("GET", url, headers=headers)
+        data = received.json()['result']
+
+        if data!= None:
+            data = json.loads(data)
+            data = pd.DataFrame.from_dict(data, orient='index')
+            data.reset_index(inplace=True)
+            data.rename(columns={'index': 'Rank', 'Percentage': '%'}, inplace=True)
+            data['Rank'] = data['Rank'].astype(int)
+            data['Rank'] = data['Rank'].apply(lambda x: x+1)
+            data.set_index('Rank')
+
+            if data.shape[0] != 0:
+
+                return render_template('ranks.html', tops=app.config['tops'], branches=app.config['branches'], batches=app.config['batches'], semesters=app.config['semesters'], colleges=app.config['colleges'], data=data.to_html(index=False), message=f'{top} students in batch {batch}, <br>for {semester} semester, <br>in {college_uni}, <br>& from {branch} are:')
+
+            else:
+                return render_template('ranks.html', tops=app.config['tops'], branches=app.config['branches'], batches=app.config['batches'], semesters=app.config['semesters'], message='No data found!', colleges=app.config['colleges'], )
+
+
+        else:
+            return render_template('ranks.html', tops=app.config['tops'], branches=app.config['branches'], batches=app.config['batches'], semesters=app.config['semesters'], message='No data found!', colleges=app.config['colleges'], )
+
+    return render_template('ranks.html', tops=app.config['tops'], branches=app.config['branches'], batches=app.config['batches'], semesters=app.config['semesters'], colleges=app.config['colleges'], )
+
+
+# TODO 5: Add visualizations in Profile section
+# TODO 6: Fix telegram marks display

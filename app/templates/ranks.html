@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %} Ranks {% endblock title %}
+{% block body %}
+<div class="bg-rank">
+    <div class="batch-semester-text-profile">
+        <p>Feel Free to filter data by:</p>
+        <div>
+            <form class="form-inline" method="POST" action="/Ranks">
+                <div>
+                    <select name="batch-select" class="dropbtn">
+                        {% for i in batches %}
+                        <option value="{{ i.name }}">{{ i.name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="semester-select" class="dropbtn">
+                        {% for i in semesters %}
+                        <option value="{{ i.name }}">{{ i.name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="college-uni-select" class="dropbtn">
+                        {% for i in colleges %}
+                        <option value="{{ i.name }}">{{ i.name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="branch-select" class="dropbtn">
+                        {% for i in branches %}
+                        <option value="{{ i.name }}">{{ i.name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select name="top-select" class="dropbtn">
+                        {% for i in tops %}
+                        <option value="{{ i.name }}">{{ i.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="enrolment-container-profile">
+        <button type="submit" class="chk-btn">Display Ranks</button>
+    </div>
+    </form>
+    <br>
+    <center>
+    <div class="info-block-ranks">{{message|safe}}</div>
+</center>
+    <div class="marks">
+        {{ data|safe }}
+    </div>
+    <div style="padding-bottom: 2.5%;"></div>
+</div>
+{% endblock body %}

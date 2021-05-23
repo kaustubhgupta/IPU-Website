@@ -21,6 +21,16 @@
 
 }
 
+.info-block-ranks {
+    text-align: left;
+    font-family: cursive;
+    font-weight: 900;
+    padding-left: 37%;
+    padding-top: 0%;
+    font-size: x-large;
+    color: #6b3131;
+}
+
 .info-block-profile {
     font-family: cursive;
     font-weight: 900;
@@ -29,7 +39,9 @@
 }
 
 .info-block-list {
+    text-align: left;
     font-family: cursive;
+    padding-left: 18%;
     font-weight: 900;
     font-size: larger;
     color: #c32e3d;
@@ -106,32 +118,44 @@
 
 .img-profgen {
     position: absolute;
-    border-radius: 0.5in;
-    margin-left: 37%;
-    margin-top: 0.5%;
+    border-radius: 1.5in;
+    margin-left: 30%;
+    margin-top: 1.5%;
 
 }
 
 .img-analytics {
     position: absolute;
-    border-radius: 0.5in;
-    margin-top: 0.72%;
-    margin-left: 51%;
+    border-radius: 0.4in;
+    margin-top: 1.72%;
+    margin-left: 44%;
+    height: 20%;
+}
+
+.img-ranks {
+    position: absolute;
+    border-radius: 0.2in;
+    margin-top: 1.72%;
+    margin-left: 60%;
     height: 20%;
 }
 
 .features-name {
-    margin-left: 37.5%;
-    margin-top: 10.5%;
+    margin-left: 28.5%;
+    margin-top: 12.5%;
+}
+
+.features-name-mobile {
+    visibility: hidden;
 }
 
 a:hover {
-    color: #80494e;
+    color: #19cc41;
     text-decoration: underline;
 }
 
 .custom-a {
-    color: #ffcfcf;
+    color: #19cc41;
     font-size: x-large;
     font-weight: 700;
     font-family: cursive;
@@ -141,6 +165,16 @@ a:hover {
 .bg {
     background-image: url(/static/img/bkg.png);
     height: 84%;
+    margin-top: -1%; 
+    margin-right: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-rank {
+    background-image: url(/static/img/bkg.png);
+    height: 67%;
     margin-top: -1%; 
     margin-right: 0%;
     background-position: center;
@@ -215,6 +249,17 @@ html {
     font-weight: bolder;
 }
 
+.hyperlink-btn {
+    border: none;
+    background-color: #ffffff;
+    color: #19cc41;
+    cursor: pointer;
+    border-radius: 0.5in;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -246,11 +291,6 @@ color: white;
 width: 4%;
 }
 
-.fa-instagram {
-background: #459e59;
-color: white;
-width: 4%;
-}
 
 .fa-github {
 background: #459e59;
@@ -259,10 +299,9 @@ width: 4%;
 }
 
 .fa-medium {
-
-    background: #459e59;
-    color: white;
-    width: 4%;
+background: #459e59;
+color: white;
+width: 4%;
 }
 
 .coming-soon {    
@@ -340,8 +379,43 @@ width: 4%;
     .img-analytics {
         position: absolute;
         border-radius: 0.5in;
-        margin-top: 5.5%;
-        margin-left: 53%;
+        margin-top: 52.5%;
+        margin-left: 25%;
+    }
+
+    .img-ranks {
+        position: absolute;
+        border-radius: 0.2in;
+        margin-top: 5.72%;
+        margin-left: 67%;
+        height: 18%;
+    }
+
+    .features-name-mobile{
+        visibility: visible;
+    }
+
+    .hyperlink-btn-analytics {
+        border: none;
+        background-color: #ffffff;
+        color: #19cc41;
+        cursor: pointer;
+        border-radius: 0.5in;
+        font-size: larger;
+        font-weight: bolder;
+        padding-top: 36%;
+        padding-left: 33%;
+    }
+
+    .hyperlink-btn {
+        border: none;
+        background-color: #ffffff;
+        color: #19cc41;
+        cursor: pointer;
+        border-radius: 0.5in;
+        font-size: larger;
+        font-weight: bolder;
+    
     }
 
     .batch-semester-text {
@@ -352,6 +426,47 @@ width: 4%;
         font-family: 'Courier New', monospace;
         font-weight: bolder;
         color: #2c2f31;
+    }
+
+    .info-block-ranks {
+        text-align: initial;
+        font-family: 'Courier New', monospace;
+        font-weight: 700;
+        padding-left: 6%;
+        padding-top: 0%;
+        font-size: large;
+        color: #6b3131;
+    }
+
+    .fa-facebook {
+    background: #459e59;
+    color: white;
+    width: 13%;
+    }
+    
+    .fa-twitter {
+    background: #459e59;
+    color: white;
+    width: 15%;
+    }
+    
+    .fa-linkedin {
+    background: #459e59;
+    color: white;
+    width: 15%;
+    }
+    
+    
+    .fa-github {
+    background: #459e59;
+    color: white;
+    width: 15%;
+    }
+    
+    .fa-medium {
+    background: #459e59;
+    color: white;
+    width: 15%;
     }
 
     .enrolment-container {
@@ -386,8 +501,7 @@ width: 4%;
     }
 
     .features-name {
-        margin-left: 7%;
-        margin-top: 42%;
+        visibility: hidden;
     }
 
     a:hover {
@@ -400,7 +514,6 @@ width: 4%;
         font-size: large;
         font-weight: 700;
         font-family: 'Courier New', monospace;
-
     }
 
     .name-title {
