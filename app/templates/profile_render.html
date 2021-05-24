@@ -7,15 +7,30 @@
     <div class="info-block">Your Current CGPA is {{cgpa}}</div>
     <div class="info-block">Your Average Percentage is {{percentage_final}}</div>
 
-<div style="padding-bottom: 3%;"></div>
-{% for data in parsed_data %}
-<div class="info-block-profile">Semester - {{data[0]}}</div>
-<div class="info-block-profile">Scored {{data[3]}}% marks with {{data[2]}} Semester Grade Point(SGPA)</div>
-<div class="marks">
-    {{ data[1]|safe }}
-</div>
-<div style="padding-bottom: 2.5%;"></div>
-{% endfor %}
+    <div class="chart" id="sgpa_plot">
+        <script>
+            var graphs = {{ sgpa_plot | safe}};
+            Plotly.plot('sgpa_plot', graphs, {});
+        </script>
+    </div>
+
+    <div class="chart" id="percentage_plot">
+        <script>
+            var graphs = {{ percentage_plot | safe}};
+            Plotly.plot('percentage_plot', graphs, {});
+        </script>
+    </div>
+    <div style="padding-bottom: 1%;"></div>
+    <div class="info-block">Semester wise Marksheets</div>
+    <div style="padding-bottom: 2%;"></div>
+    {% for data in parsed_data %}
+    <div class="info-block-profile">Semester - {{data[0]}}</div>
+    <div class="info-block-profile">Scored {{data[3]}}% marks with {{data[2]}} Semester Grade Point(SGPA)</div>
+    <div class="marks">
+        {{ data[1]|safe }}
+    </div>
+    <div style="padding-bottom: 2.5%;"></div>
+    {% endfor %}
 </center>
 <div style="padding-bottom: 5%;"></div>
 {% endblock body %}
