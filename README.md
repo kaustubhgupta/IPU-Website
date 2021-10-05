@@ -10,8 +10,8 @@
 - You can also generate your profile which gives out all the previous semesters' results.
 - What's for me in this? Nothing! No ads, no bloatware.
 
-## Preview (As of May, 2021) 😉
-![web-preview](./preview/web-preview.gif)
+## Preview (As of 5th Oct, 2021) 😉
+![web-preview](./preview.gif)
 
 ## Important Notice 😮
 - The deployment of the active version of the website is done from another private repository.
