@@ -1,3 +1,6 @@
+_Important Notice 😮_
+_The deployment of the active version of the website is done from another private repository. The contents of this repository are old and obsolete_
+
 # IPU-Website 😎
 
 ![IPU-Website](https://socialify.git.ci/kaustubhgupta/IPU-Website/image?description=1&language=1&owner=1&pattern=Circuit%20Board&theme=Light)
@@ -12,8 +15,3 @@
 
 ## Preview (As of 5th Oct, 2021) 😉
 ![web-preview](./preview.gif)
-
-## Important Notice 😮
-- The deployment of the active version of the website is done from another private repository.
-- The contents of this repository are old now and obsolete.
-- The current website's analytics dashboard is under maintenance mode.
