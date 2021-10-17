@@ -15,3 +15,6 @@ _The deployment of the active version of the website is done from another privat
 
 ## Preview (As of 5th Oct, 2021) 😉
 ![web-preview](./preview.gif)
+
+## Dashboard Preview (As of 17th Oct, 2021)
+![](./dashboard.png)
