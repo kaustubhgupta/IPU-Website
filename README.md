@@ -1,5 +1,8 @@
 _Important Notice 😮_
-_The deployment of the active version of the website is done from another private repository. The contents of this repository are old and obsolete now. The code structure of the new website is based on a different tech stack (FastAPI + Flask + Plotly + Dash), this version can be used as a backup in the future._
+
+_1. The deployment of the active version of the website is done from another private repository. The contents of this repository are old and obsolete now. The code structure of the new website is based on a different tech stack (FastAPI + Flask + Plotly + Dash), this version can be used as a backup in the future._
+
+_2. This website will not see any new data update starting March 2022_
 
 # IPU-Website 😎
 
