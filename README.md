@@ -13,8 +13,8 @@ _The deployment of the active version of the website is done from another privat
 - You can also generate your profile which gives out all the previous semesters' results.
 - What's for me in this? Nothing! No ads, no bloatware.
 
-## Preview (As of 5th Oct, 2021) 😉
+## Preview (As of 1st March, 2022) 😉
 ![web-preview](./preview.gif)
 
-## Dashboard Preview (As of 17th Oct, 2021)
-![](./dashboard.png)
+## Dashboard Preview (As of 1st March, 2022)
+![image](https://user-images.githubusercontent.com/43691873/156220582-4e9f4e0d-4966-468a-939c-fee3c63b6bbe.png)
