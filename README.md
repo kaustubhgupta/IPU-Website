@@ -19,5 +19,5 @@ _2. This website will not see any new data update starting September 2022_
 ## Preview (As of 1st March, 2022) 😉
 ![web-preview](./preview.gif)
 
-## Dashboard Preview (As of 1st March, 2022)
-![image](https://user-images.githubusercontent.com/43691873/156220582-4e9f4e0d-4966-468a-939c-fee3c63b6bbe.png)
+## Dashboard Preview (As of 14th March, 2022)
+![image](https://user-images.githubusercontent.com/43691873/158124672-ad3c3ebe-0ef0-4615-99fc-66894f2d9faf.png)
